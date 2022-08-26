@@ -29,7 +29,7 @@ twitter_username: jekyllrb
 github_username:  AndrewMalyhin
 
 # Build settings
-theme: huangyz0918/moving 
+remote_theme: huangyz0918/moving 
 plugins:
   - jekyll-feed
 
