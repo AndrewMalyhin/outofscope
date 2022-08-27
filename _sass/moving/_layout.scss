@@ -111,6 +111,13 @@
   margin-bottom: $spacing-unit / 2;
 }
 
+.license {
+  
+    color: $text-color;
+    text-decoration: none;
+    @include relative-font-size(0.7);
+}
+
 .p-name {
   @media (max-width: 500px) {
     @include relative-font-size(0.9);

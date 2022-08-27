@@ -3,19 +3,15 @@
     <div class="wrapper">
       <div class="footer-col-wrapper">
         <div class="footer-col">
-          <ul class="contact-list">
-            <li class="p-name">
-              {%- if site.author -%}
-                <a class="black-link" href="{{ site.url }}/about.html">
-                  {{ site.author | escape }} 
-                </a>
-              {%- endif -%}
-              </li>
-              {%- if site.email -%}
-              <li>
-              <a class="u-email black-link" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-              {%- endif -%}
-          </ul>
+          <div class="flex-container">
+            {%- if site.content_license_text -%}
+            <p class="license"> {{ site.author }}. {{ site.content_license_text }}
+                  <a class="u-email black-link" href="{{ site.content_license_url }}.">
+                    {{ site.content_license_type }}.
+                  </a>
+            </p>
+            {%- endif -%}
+          </div>
         </div>
       </div>
     </div>
