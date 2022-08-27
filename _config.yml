@@ -29,7 +29,7 @@ content_license_text: All content of this side is licensed under
 content_license_type: CC BY-NC-SA 4.0
 content_license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://outofscope.blog" # the base hostname & protocol for your site, e.g. http://example.com
 email: "contact@outofscope.blog"
 
@@ -37,10 +37,11 @@ twitter_username: outofscopeblog
 github_username:  AndrewMalyhin
 
 # Build settings
-#theme: moving 
-remote_theme: huangyz0918/moving
+theme: moving 
+#remote_theme: huangyz0918/moving
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
