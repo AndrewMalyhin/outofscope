@@ -23,9 +23,15 @@ layout: default
       {% endif %}
   
       <li>
-          <a class="black-link post-link-layout" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
+        <div class="flex-container">
+          <a style="align-self: left" class="post-link post-link-layout" href="{{ post.url | relative_url }}">
+            {{ post.title}}
           </a>
+          {%- assign date_format = site.moving.date_format | default: "%b %-d" -%}
+          <span class="post-date" style="align-self: right">
+            {{ post.date | date: date_format | escape }}
+          </span>
+        </div>
       </li>
   
       {% if forloop.last %}
