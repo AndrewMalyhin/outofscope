@@ -4,6 +4,33 @@ title: "Code Highlight Tests"
 categories: misc
 ---
 
+## Test for Swift
+
+```swift
+import Foundation
+
+struct Environment {}
+
+struct ViewBuilder {
+    static let build: (Environment) -> UIView
+}
+
+extension ViewBuilder {
+    static func empty() -> Self {
+        .init { _ in
+            UIView(frame: .zero)
+        }
+    }
+
+    static func text(text: String) -> Self {
+        .init { env in
+            UILabel(text: text)
+        }
+    }
+}
+
+```
+
 ## Test for C
 ```c
 #define UNICODE
