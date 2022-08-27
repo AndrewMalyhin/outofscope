@@ -37,8 +37,8 @@ twitter_username: outofscopeblog
 github_username:  AndrewMalyhin
 
 # Build settings
-theme: moving 
-#remote_theme: huangyz0918/moving
+#theme: moving 
+remote_theme: huangyz0918/moving
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
