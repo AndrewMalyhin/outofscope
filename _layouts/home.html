@@ -6,8 +6,14 @@ layout: default
   <head>
       <title>{{ site.title }}</title>
   </head>
-  <div class="home-title">
+  <div class="home-title flex-container">
     <p class="home-heading">{{ site.title }}</p>
+    <div class="flex-container">
+      <a class="menu-item">Feed</a>
+      <a class="menu-item">About</a>
+    </div>
+  </div>
+  <div>
     <p class="home-sub-heading">{{- site.description | escape -}}</p>
   </div>
 
@@ -28,7 +34,7 @@ layout: default
             {{ post.title}}
           </a>
           {%- assign date_format = site.moving.date_format | default: "%b %-d" -%}
-          <span class="post-date" style="align-self: right">
+          <span class="post-date" style="align-self: center">
             {{ post.date | date: date_format | escape }}
           </span>
         </div>
