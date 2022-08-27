@@ -19,22 +19,30 @@
 # in the templates via {{ site.myvariable }}.
 
 title: out of scope
-subtitle: I'm Andrei Malyhin and this is my blog about overlooked topics in mobile development.
+tagline: Blog about overlooked topics in software development.
 description: >-
-  blog about overlooked topics in mobile development. technical debt, code quality, processes, team organization, refactoring, testing, interviewing, leadership
+  blog about overlooked topics in software development. technical debt, code quality, processes, team organization, refactoring, testing, interviewing, leadership
 
-author: © 2022 Andrei Malyhin 
+author: Andrei Malyhin 
 
 content_license_text: All content of this side is licensed under
 content_license_type: CC BY-NC-SA 4.0
 content_license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://outofscope.blog" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.outofscope.blog" # the base hostname & protocol for your site, e.g. http://example.com
 email: "contact@outofscope.blog"
 
-twitter_username: outofscopeblog
-github_username:  AndrewMalyhin
+twitter:
+  username: outofscopeblog
+
+social:
+  name: Andrei Malyhin
+  links: 
+    - https://github.com/AndrewMalyhin
+    - https://www.linkedin.com/in/andrei-malyhin-71665417b
+
+
 
 # Build settings
 #theme: moving 
